@@ -20,7 +20,7 @@
 # User Defined variables
 weburl="https://go.microsoft.com/fwlink/?linkid=2009112"                            # What is the Azure Blob Storage URL?
 appname="Microsoft Office"                                                          # The name of our App deployment script (also used for Octory monitor)
-logandmetadir="/Library/Application Support/Microsoft/IntuneScripts/installOffice"  # The location of our logs and last updated data
+logandmetadir="/Library/Logs/JAMF/InstallScripts/installOfficeM365"                 # The location of our logs and last updated data
 terminateprocess="true"                                                             # Do we want to terminate the running process? If false we'll wait until its not running
 autoUpdate="true"                                                                   # Application updates itself, if already installed we should exit
 waitForSplashScreen=true                                                            # Should we hold the script until an onboard splashscreen is running?   
