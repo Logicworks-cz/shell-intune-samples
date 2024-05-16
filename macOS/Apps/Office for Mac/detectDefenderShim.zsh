@@ -26,7 +26,7 @@
 removeShim="false"                           # If we detect the Defender Shim Launcher, remove the Shim
 removeDefenderIfNotLicensed="false"          # If we detect Defender is installed but not licensed, remove it
 defender_path="/Applications/Microsoft Defender.app"
-logDir="/Library/Application Support/Microsoft/IntuneScripts/Defender Shim Check"
+logDir="/Library/Logs/JAMF/InstallScripts/Defender Shim Check"
 log=$logDir/defenderShimDetect.log
 
 # Create directory to log to
