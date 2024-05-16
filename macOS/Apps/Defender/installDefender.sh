@@ -21,7 +21,7 @@
 weburl="https://aka.ms/MacDefender"                                         # What is the APP Storage URL
 appname="Microsoft Defender"                                                # The name of our App deployment script (also used for Octory monitor)
 app="Microsoft Defender.app"                                                # The actual name of our App once installed
-logandmetadir="/Library/Logs/Microsoft/IntuneScripts/installDefender"       # The location of our logs and last updated data
+logandmetadir="/Library/Logs/JAMF/installDefender"                          # The location of our logs and last updated data
 processpath="/Applications/Microsoft Defender.app/Contents/MacOS/Microsoft Defender.app/Contents/MacOS/Microsoft Defender"    # The process name of the App we are installing
 terminateprocess="true"                                                     # Do we want to terminate the running process? If false we'll wait until its not running
 autoUpdate="true"                                                           # If true, application updates itself and we should not attempt to update
