@@ -26,14 +26,7 @@ processpath="/Applications/Microsoft Defender.app/Contents/MacOS/Microsoft Defen
 terminateprocess="true"                                                     # Do we want to terminate the running process? If false we'll wait until its not running
 autoUpdate="true"                                                           # If true, application updates itself and we should not attempt to update
 
-waitForTheseApps=(  "/Applications/Microsoft Edge.app"
-                    "/Applications/Microsoft Outlook.app"
-                    "/Applications/Microsoft Word.app"
-                    "/Applications/Microsoft Excel.app"
-                    "/Applications/Microsoft PowerPoint.app"
-                    "/Applications/Microsoft OneNote.app"
-                    "/Applications/Microsoft Teams.app"
-                    "/Applications/Company Portal.app")
+waitForTheseApps=()
 
 # Generated variables
 tempdir=$(mktemp -d)
@@ -756,7 +749,7 @@ waitForDesktop
 downloadApp
 
 # Don't start install until our other apps have finished, otherwise we will terminate their download
-waitForOtherApps
+# waitForOtherApps
 
 # Install PKG file
 if [[ $packageType == "PKG" ]]; then
