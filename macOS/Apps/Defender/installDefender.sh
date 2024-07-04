@@ -26,8 +26,7 @@ processpath="/Applications/Microsoft Defender.app/Contents/MacOS/Microsoft Defen
 terminateprocess="true"                                                     # Do we want to terminate the running process? If false we'll wait until its not running
 autoUpdate="true"                                                           # If true, application updates itself and we should not attempt to update
 
-waitForTheseApps=(  "/Applications/Microsoft Edge.app"
-                    "/Applications/Microsoft Outlook.app"
+waitForTheseApps=(  "/Applications/Microsoft Outlook.app"
                     "/Applications/Microsoft Word.app"
                     "/Applications/Microsoft Excel.app"
                     "/Applications/Microsoft PowerPoint.app"
